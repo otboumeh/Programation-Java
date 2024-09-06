@@ -20,7 +20,11 @@ public class ejemplo {
 		// pedir numero 2
 		System.out.println("Dame otro numero : ");
 		j = teclado.nextInt();
-
+		if (j == 0)
+		{
+			System.out.println("no se puedo dividir en 0");
+		}
+		else {
 		resultado = i + j;
 		System.out.println("el resultado de sumar es : " + resultado);
 		restar = i - j;
@@ -28,15 +32,9 @@ public class ejemplo {
 		multiplicar = i * j;
 		System.out.println("el resultado de multiplicar es : " + multiplicar);
 		dividir = i / j;
-		if (j == 0);
-		{
-			System.out.println("no se puedo dividir en 0");
-		}
-		if (j != 0)
-		{	
+		
 			System.out.println("el resultado de dividir es : " + dividir);
 
 	}
-
 }
 }
