@@ -9,13 +9,14 @@ public class ejemplo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int i = 0;
-		
+
 		// pedir numero 1
 		System.out.print("Dame un numero : ");
 		i = teclado.nextInt();
-		System.out.println("el resultado es  " + i);
-	
-
+		if (i >= 0) {
+			System.out.println("el valor absoluto es  " + i);
+		} else if (i < 0) {
+			System.out.println("el valor absoluto es " + (-i));
+		} 
 	}
 }
-
