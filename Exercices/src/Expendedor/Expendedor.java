@@ -8,13 +8,13 @@ public class Expendedor {
 	public static void main(String[] args) {
 		
 		int pedido;
+		int[] monedas = {200, 100, 50, 20, 10, 5, 2, 1};  // Array con los valores de las monedas (en céntimos)
+	    int cambioEnCentimos;
 		double cafe = 0.43;
 		double	refrescos = 1.11;
 		double	agua = 0.36;
 		double saldo = 0 ;
 		double precio = 0;
-        int[] monedas = {200, 100, 50, 20, 10, 5, 2, 1};
-        int cambioEnCentimos;
         double cambio;
 
 		System.out.println("Porfa escribe tu saldo");
@@ -24,7 +24,7 @@ public class Expendedor {
 		System.out.println("Saldo insuficiente");
 		System.exit(0);
 		}
-			System.out.println("cafe = 0.43\nrefrescos = 1.11\nagua = 0.36\nPorfa elige un producto");
+			System.out.println("1- cafe = 0.43\n2- refrescos = 1.11\n3- agua = 0.36\nPorfa elige un producto");
             pedido = teclado.nextInt(); 
             if(pedido != 1 && pedido != 2 && pedido != 3) {
 					System.out.println("Opcion incorecta \nAqui tienes vuesto sueldo : " + saldo);
@@ -46,7 +46,6 @@ public class Expendedor {
             if (cambio > 0) {
                 System.out.println("Gracias por tu compra. Aquí tienes tu cambio: ");
 
-                // Array con los valores de las monedas (en céntimos)
                 cambioEnCentimos = (int) Math.round(cambio * 100);  // Convertir el cambio en céntimos
 
                 for (int moneda : monedas) {
