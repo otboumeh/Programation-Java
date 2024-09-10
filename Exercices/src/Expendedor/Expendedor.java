@@ -26,20 +26,22 @@ public class Expendedor {
 		}
 			System.out.println("1- cafe = 0.43\n2- refrescos = 1.11\n3- agua = 0.36\nPorfa elige un producto");
             pedido = teclado.nextInt(); 
-            if(pedido != 1 && pedido != 2 && pedido != 3) {
-					System.out.println("Opcion incorecta \nAqui tienes vuesto sueldo : " + saldo);
-					System.exit(0);
-		}
-            if (pedido == 1) {
-                precio = cafe;
-            } else if (pedido == 2) {
-                precio = refrescos;
-            } else if (pedido == 3) {
-                precio = agua;
+            switch(pedido) {
+            case 1 :
+            	precio = cafe;
+            	break;
+            case 2 :
+            	precio = refrescos;
+            	break;
+            case 3:
+            	precio = agua;
+            	break;
+            default :
+            	System.out.println("Opcion incorecta \nAqui tienes vuesto sueldo : " + saldo);
+				System.exit(0);
             }
             if (saldo < precio) {
-                System.out.println("Saldo insuficiente");
-                System.exit(0);
+                
             }
              cambio = saldo - precio;
 
