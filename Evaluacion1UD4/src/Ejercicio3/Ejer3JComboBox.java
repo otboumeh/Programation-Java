@@ -107,8 +107,8 @@ public class Ejer3JComboBox extends JFrame {
 		});
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String tipoIdSeleccionado = comboBox.getSelectedItem().toString(); // this is very important to do the
-																					// check
+				String tipoIdSeleccionado = comboBox.getSelectedItem().toString(); // this is very important to do the check of DNI
+																					
 
 				String dni = textField_4.getText();
 				if (textField.getText().length() > 0 && textField_1.getText().length() > 0
