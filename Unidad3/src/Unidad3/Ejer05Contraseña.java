@@ -9,7 +9,6 @@ public class Ejer05Contraseña {
 		int pass = 1234;
 		String numero = " ";
 		
-		int n = 0;
 		int k = 0;
 		boolean flag = true;
 		while(flag) {
